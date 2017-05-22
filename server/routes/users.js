@@ -56,7 +56,7 @@ router.get('/pblogin', function(req, res) {
             return res.send('False');
         }
         req.logIn(user, function(err) {});
-        window.location = '/';
+        res.json(req.user);
     });
 });
 router.get('/full', function(req, res) {
