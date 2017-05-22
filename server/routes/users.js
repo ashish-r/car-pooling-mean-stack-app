@@ -50,13 +50,13 @@ router.get('/dlogin', function(req, res) {
 });
 router.get('/pblogin', function(req, res) {
     User.findOne({
-        _id: '571262c6b5178cac0c99f9d2'
+        _id: '592319b40a5e8911000556ff'
     }, function(err, user) {
         if (err || !user) {
             return res.send('False');
         }
         req.logIn(user, function(err) {});
-        res.json(req.user);
+        window.location.assign("https://ride-share-mean-app.herokuapp.com/")
     });
 });
 router.get('/full', function(req, res) {
