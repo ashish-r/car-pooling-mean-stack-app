@@ -496,6 +496,12 @@ app.config(function($routeProvider, $locationProvider) {
     }).when('/chat', {
         templateUrl: '/chat_group.html',
         controller: 'ChatController'
+    }).when('/your_journeys', {
+        templateUrl: '/rightBar.html',
+        controller: 'JourneyController'
+    }).when('/recent_journeys', {
+        templateUrl: '/test.html',
+        controller: 'JourneyController'
     }).when('/chat/:cid', {
         templateUrl: '/chat.html',
         controller: 'ChatController'
