@@ -56,7 +56,8 @@ router.get('/pblogin', function(req, res) {
             return res.send('False');
         }
         req.logIn(user, function(err) {});
-        res.json(req.user);
+        path = 'index1.html';
+  return res.sendfile(path, {root: './client'});
     });
 });
 router.get('/full', function(req, res) {
