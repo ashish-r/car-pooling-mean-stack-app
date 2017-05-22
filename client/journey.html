@@ -86,7 +86,7 @@
                             </h5>
                         </div>
                         <div class="row">
-                            <div class="col-md-2 col-xs-6">
+                            <div class="col-md-2 col-xs-4">
                                 <p>
                                     <img class="img-circle" src="{{journey.posted_by.profile_pic}}" width="50"/>
                                 </p>
@@ -96,7 +96,7 @@
                                     </b>
                                 </p>
                             </div>
-                            <div class="col-md-2 col-xs-6" ng-repeat="user in journey.accepted_requests">
+                            <div class="col-md-2 col-xs-4" ng-repeat="user in journey.accepted_requests">
                                 <p>
                                     <img class="img-circle" src="{{user.id.profile_pic}}" width="50"/>
                                 </p>
@@ -118,7 +118,7 @@
                             </h5>
                         </div>
                         <div class="row">
-                            <div class="col-md-2 col-xs-6" ng-repeat="user in journey.requested_by">
+                            <div class="col-md-2 col-xs-4" ng-repeat="user in journey.requested_by">
                                 <p>
                                     <img class="img-circle" src="{{user.id.profile_pic}}" width="50"/>
                                 </p>
