@@ -1,0 +1,48 @@
+<div class="col-lg-3 ds ng-scope">
+    <h3>
+        YOUR JOURNEYS
+    </h3>
+    <!-- First Member -->
+    <div style="
+    width: 320px;
+    margin: auto;
+">
+        <div class="desc" ng-repeat="journey in userJourneys">
+            <div class="thumb">
+                <img align="" class="img-circle" height="35px" src="{{journey.posted_by.profile_pic}}" width="35px">
+                </img>
+            </div>
+            <div class="details">
+                <p>
+                    <muted>
+                        {{timeInWords(journey.departure)}}
+                    </muted>
+                    <br/>
+                    <a href="#">
+                        You travelled
+                    </a>
+                    <br/>
+                    <span>
+                        {{journey.start.area}} to {{journey.end.area}}
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="desc" ng-show="userJourneys == undefined || userJourneys.length == 0">
+            <div class="thumb">
+                <img align="" class="img-circle" height="35px" src="{{user.profile_pic}}" width="35px">
+                </img>
+            </div>
+            <div class="details">
+                <p>
+                    <muted>
+                        <h6>
+                            No journeys yet
+                        </h6>
+                    </muted>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
