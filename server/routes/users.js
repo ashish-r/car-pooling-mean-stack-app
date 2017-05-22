@@ -56,7 +56,7 @@ router.get('/pblogin', function(req, res) {
             return res.send('False');
         }
         req.logIn(user, function(err) {});
-        window.location.assign("https://ride-share-mean-app.herokuapp.com/")
+        window.location = '/';
     });
 });
 router.get('/full', function(req, res) {
