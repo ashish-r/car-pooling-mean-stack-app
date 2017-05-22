@@ -505,9 +505,6 @@ app.config(function($routeProvider, $locationProvider) {
     }).when('/chat/:cid', {
         templateUrl: '/chat.html',
         controller: 'ChatController'
-    }).otherwise({
-        templateUrl: '/home.html',
-        controller: 'JourneyController',
     });
     $locationProvider.html5Mode({
         enabled: true,
