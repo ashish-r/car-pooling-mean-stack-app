@@ -7,7 +7,7 @@
                     <meta content="Dashboard" name="author">
                         <meta content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina" name="keyword">
                             <title>
-                                Commutr - The free Car Pooling Website
+                                Ride Share
                             </title>
                             <!-- Bootstrap core CSS -->
                             <link href="/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
@@ -34,13 +34,7 @@
                 <div class="fa fa-bars tooltips" data-original-title="" data-placement="right">
                 </div>
             </div>
-            <!--logo start-->
-            <a class="logo" href="/">
-                <b>
-                    Commutr
-                </b>
-            </a>
-            <!--logo end-->
+
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
                 <ul class="nav top-menu">
@@ -136,6 +130,15 @@
                 </ul>
                 <!--  notification end -->
             </div>
+
+
+            <!--logo start-->
+            <a class="logo" href="/">
+                <b>
+                    Ride Share
+                </b>
+            </a>
+            <!--logo end-->
             <div class="top-menu" ng-controller="SidebarController">
                 <ul class="nav pull-right top-menu">
                     <li>
@@ -152,7 +155,7 @@
     *********************************************************************************************************************************************************** -->
         <!--sidebar start-->
         <aside ng-controller="SidebarController">
-            <div class="nav-collapse " id="sidebar">
+            <div class="nav-collapse " id="sidebar" style="margin-left: -410px;">
                 <!-- sidebar menu start-->
                 <ul class="sidebar-menu" id="nav-accordion">
                     <p class="centered">
@@ -165,8 +168,7 @@
                     </h5>
                     <li class="mt">
                         <a class="active" href="/">
-                            <i class="fa fa-dashboard">
-                            </i>
+                            <i class="fa fa-car" aria-hidden="true"></i>
                             <span>
                                 Home
                             </span>
@@ -174,8 +176,7 @@
                     </li>
                     <li class="mt">
                         <a href="/addjourney">
-                            <i class="fa fa-dashboard">
-                            </i>
+                            <i class="fa fa-bullhorn" aria-hidden="true"></i>
                             <span>
                                 Post New Journey
                             </span>
@@ -183,18 +184,36 @@
                     </li>
                     <li class="mt">
                         <a href="/chat">
-                            <i class="fa fa-dashboard">
-                            </i>
+                            <i class="fa fa-comments-o" aria-hidden="true"></i>
                             <span>
                                 Chat Groups
                             </span>
                         </a>
                     </li>
+
+                    <li class="mt">
+                        <a href="/your_journeys">
+                            <i class="fa fa-dashboard">
+                            </i>
+                            <span>
+                                Your Journeys
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="mt">
+                        <a href="/recent_journeys">
+                            <i class="fa fa-history" aria-hidden="true"></i>
+                            <span>
+                                Recent Journeys
+                            </span>
+                        </a>
+                    </li>
+
                     <li class="mt">
                         <a class="logout" ng-click="logout()" target="_blank">
 
-                            <i class="fa fa-dashboard">
-                            </i>
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
                             Logout
                         </a>
                     </li>
@@ -214,7 +233,7 @@
         <!--footer start-->
         <footer class="site-footer">
             <div class="text-center">
-                2016 - Pratyush
+                Group No. - 24
                 <a class="go-top" href="">
                     <i class="fa fa-angle-up">
                     </i>
