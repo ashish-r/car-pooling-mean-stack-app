@@ -43,7 +43,7 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="">
                             <i class="fa fa-tasks">
                             </i>
-                            <span class="badge bg-theme02" ng-if="notificationCount" ng-cloak>
+                            <span class="badge bg-theme02" ng-if="notificationCount" ng-cloak style="visibility: hidden;" id ="customBadge">
                                 {{notificationCount || ''}}
                             </span>
                         </a>
@@ -87,7 +87,7 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="">
                             <i class="fa fa-envelope-o">
                             </i>
-                            <span class="badge bg-theme02" ng-if="unreadCount" ng-cloak>
+                            <span class="badge bg-theme02" ng-if="unreadCount" ng-cloak style="visibility: hidden;" id ="customBadge">
                                 {{unreadCount || ''}}
                             </span>
                         </a>
@@ -244,6 +244,11 @@
     </div>
     <!-- js placed at the end of the document so the pages load faster -->
     <!-- Custom Angular and JS Code -->
+    <script>
+        setTimeout(function(){ document.getElementById("customBadge").style.visibility = "visible"; }, 10);
+        
+    </script>
+    
     <script src="//maps.googleapis.com/maps/api/js">
     </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js">
