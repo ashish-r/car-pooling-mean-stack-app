@@ -497,7 +497,7 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: '/chat_group.html',
         controller: 'ChatController'
     }).when('/your_journeys', {
-        templateUrl: '/your_journeys.html.html',
+        templateUrl: '/your_journeys.html',
         controller: 'JourneyController'
     }).when('/recent_journeys', {
         templateUrl: '/recent_journeys.html',
