@@ -47,8 +47,8 @@ passport.use('facebook', passConfig.facebookStrategy);
 var io = require('socket.io')();
 app.io = io;
 /*
-Routes 
-*/
+ Routes
+ */
 app.use('/api/users', users);
 app.use('/api', require('./routes/journey')(io));
 app.use('/api/chats', require('./routes/chat')(io));
