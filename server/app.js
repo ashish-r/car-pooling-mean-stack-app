@@ -15,14 +15,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 //mongoose local development
-mongodb_connection_string = 'mongodb://localhost/daslkdasdldkfj';
-//take advantage of openshift env vars when available:
-if (process.env.MONGODB_URL) {
-    mongodb_connection_string = process.env.MONGODB_URL + 'commutr';
-    mongoose.connect(mongodb_connection_string, { db: { nativeParser: true } });
-} else {
-    mongoose.connect(mongodb_connection_string);
-}
+mongoose.connect('mongodb://ashish:carpool12x01y@ds149551.mlab.com:49551/carpool12x01y');
 //Compression
 app.use(require('compression')());
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
