@@ -502,9 +502,6 @@ app.config(function($routeProvider, $locationProvider) {
     }).when('/recent_journeys', {
         templateUrl: '/recent_journeys.html',
         controller: 'JourneyController'
-    }).when('/registration', {
-        templateUrl: '/registration.html',
-        controller: 'JourneyController'
     }).when('/chat/:cid', {
         templateUrl: '/chat.html',
         controller: 'ChatController'
