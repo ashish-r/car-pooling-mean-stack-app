@@ -497,10 +497,13 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: '/chat_group.html',
         controller: 'ChatController'
     }).when('/your_journeys', {
-        templateUrl: '/rightBar.html',
+        templateUrl: '/your_journeys.html.html',
         controller: 'JourneyController'
     }).when('/recent_journeys', {
-        templateUrl: '/test.html',
+        templateUrl: '/recent_journeys.html',
+        controller: 'JourneyController'
+    }).when('/registration', {
+        templateUrl: '/registration.html',
         controller: 'JourneyController'
     }).when('/chat/:cid', {
         templateUrl: '/chat.html',
