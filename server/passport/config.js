@@ -12,8 +12,8 @@ module.exports = {
         done(null, user._id);
     },
     facebookStrategy: new FacebookStrategy({
-        clientID: '985316208238504',
-        clientSecret: '4be4b79bf3b4f959338019589106c0e8',
+        clientID: '271757209831174',
+        clientSecret: 'f220b7b975fb118c828a78bc48363190',
         callbackURL: "https://ride-share-mean-app.herokuapp.com/api/users/facebook/callback",
         profileFields: ['id', 'displayName', 'picture', 'emails', 'gender', 'about', 'bio']
     }, function(accessToken, refreshToken, profile, cb) {
